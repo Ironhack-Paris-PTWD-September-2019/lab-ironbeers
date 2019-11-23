@@ -6,3 +6,23 @@ grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
   
+body {
+    font: 200 16px/1.5 "Arial, Helvetica, sans-serif";
+
+  }
+  
+  #navbarBox{
+    background-color:#2081C3 ;
+    border-radius: 0.5em; 
+  }
+  .CTA {
+    padding-top: 1em 1em;
+    justify-content: space-around;
+    color : white ;
+    background-color : #2081C3; 
+  }
+  
+  #home{
+    color : white ; 
+  }
+  
