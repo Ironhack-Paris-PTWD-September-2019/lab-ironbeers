@@ -36,13 +36,9 @@ body {
 }
 
 #main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     flex:1;
     padding-top: 2em;
     padding-bottom: 2em;
-    text-align: center;
 }
 
 #main .logo {
@@ -58,6 +54,13 @@ body {
     border-radius: 5px;
 }
 
+#homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 #beers {
     display: flex;
     flex-wrap: wrap;
@@ -66,6 +69,7 @@ body {
 #beers .beerCard {
     width: Calc(100% / 3);
     padding: 1em;
+    text-align: center;
 } 
 
 #beers .beerCard img {
@@ -76,9 +80,35 @@ body {
     text-align: center;
 }
 
-#beers .beerCard .tagline {
+#beers .beerCard .tagline, #randomBeer .beerDetailedCard .information .tagline {
     font-style: italic;
     color: rgba(145, 145, 145, 0.481);
+}
+
+#randomBeer .beerDetailedCard {
+    display: flex;
+    align-content: space-around;
+    padding: 2em;
+}
+
+#randomBeer .beerDetailedCard .picture {
+    min-width: 10em;
+    max-height: 20em;
+    max-width: 25em;
+    text-align: center;
+}
+
+#randomBeer .beerDetailedCard .picture img {
+    height: 100%;
+}
+
+#randomBeer .beerDetailedCard .information {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#randomBeer .beerDetailedCard .information .foodPairing {
+    font-weight: bold;
 }
 
 #footer {

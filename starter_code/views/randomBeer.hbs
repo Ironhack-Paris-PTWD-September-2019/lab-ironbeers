@@ -1,2 +1,5 @@
-  <a href="/beers">Check the Beers!</a>
-  <a href="/randon-beer">Check a random Beer!</a>
+ <div id="randomBeer">
+  {{#each beers}}
+    {{> beerDetailedCard this}}
+  {{/each}}
+</div>

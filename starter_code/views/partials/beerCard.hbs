@@ -1,5 +1,9 @@
 <div class="beerCard">
+    {{#if image_url}}
     <img src="{{ image_url }}" alt="{{ name }}" />
+    {{else}}
+    <img src="./images/no-picture.png" alt="visual not available" />
+    {{/if}}
     <h2>{{ name }}</h2>
     <p class="tagline">{{ tagline }}</p>
     <p class="description">{{ description }}</p>
