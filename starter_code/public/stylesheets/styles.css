@@ -31,6 +31,32 @@ nav a {
   padding:1em 2em; 
 }
 
+.index-container{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.index-container img {
+  width:25%; 
+}
+.button-container {
+  margin-top:2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.blue-buttons{
+  text-align:center;
+  text-decoration:none;
+  padding:0.8em;
+  background-color:#2081C3;
+  border-radius:7px;
+  color:white;
+  font-size: 84%;
+  margin-bottom: 1em;
+}
 footer {
   width:100%;
   padding-bottom:0.8em;
@@ -38,4 +64,43 @@ footer {
   padding-left:1em;
   background-color:#0A2C42; 
   color:white;
+}
+.container {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 5em;
+}
+.beer-card {
+  width:30%;
+  padding: 1.7em;
+}
+
+.beer-card img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 155px;
+}
+
+.beer-card h2 {
+  color:grey;
+  margin-top:0;
+}
+
+.beer-card h1 {
+  margin-bottom: 8px;
+}
+
+.random-beer-card {
+  display:flex;
+  margin-left: 7em;
+  margin-top: 1em;
+  margin-right: 22em;
+
+}
+
+.random-beer-card img {
+ height:300px;
+ padding-right:3em;
 }
