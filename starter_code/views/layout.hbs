@@ -8,8 +8,18 @@
     <link rel="stylesheet" href="/stylesheets/styles.css">
 </head>
 <body>
-    {{> menu}}
-    {{{body}}}
-    {{> footer}}
+    <div id="menu">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/beers">Beers</a></li>
+            <li><a href="/randon-beer">Random Beer</a></li>
+        </ul>
+    </div>
+    <div id="main">
+        {{{body}}}
+    </div>
+    <div id="footer">
+        <p>Develop by Pierre</p>
+    </div>
 </body>
 </html>
