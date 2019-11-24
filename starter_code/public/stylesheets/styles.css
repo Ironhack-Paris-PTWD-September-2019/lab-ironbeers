@@ -75,6 +75,11 @@ CLASSES
 	font-size: 85%;
 	margin-bottom: 1vh;
 }
+@media (min-width: 650px) {
+	.beer-brewers-tips {
+		display: inline-block;
+	}
+}
 
 .beer-data p {
 	padding: 0 7vw;
@@ -91,6 +96,11 @@ CLASSES
 	margin: 0 0 2px 10vw;
 	font-size: 85%;
 }
+@media (min-width: 650px) {
+	.beer-data ul li {
+		margin-left: 5vw;
+	}
+}
 
 .beer-data ul {
 	list-style: initial;
@@ -105,10 +115,20 @@ CLASSES
 	height: 40vh;
 	margin: 0 0 2vh;
 }
+@media (min-width: 650px) {
+	.beer-image {
+		padding-right: 5vw;
+	}
+}
 
 .beer-name {
 	font-weight: 700;
 	font-size: 150%;
+}
+@media (min-width: 650px) {
+	.beer-name {
+		font-size: 120%;
+	}
 }
 
 .beer-partial {
@@ -120,7 +140,6 @@ CLASSES
 	text-align: justify;
 	margin: 1vh 0 7vh;
 }
-
 @media (min-width: 650px) {
 	.beer-partial {
 		width: 30vw;
@@ -131,6 +150,12 @@ CLASSES
 	color: grey;
 	font-size: 90%;
 	margin-bottom: 7px;
+}
+@media (min-width: 650px) {
+	.beer-tagline {
+		margin: 3.5vh 0 2vh;
+		font-size: 80%;
+	}
 }
 
 .beers-container,
@@ -148,6 +173,12 @@ CLASSES
 		align-content: flex-start;
 		justify-content: space-around;
 		padding: 0 5vw;
+	}
+}
+
+@media (min-width: 650px) {
+	.random-beer-container {
+		height: 86vh;
 	}
 }
 
@@ -197,11 +228,23 @@ CLASSES
 	text-align: justify;
 	margin: 1vh 0 7vh;
 }
+@media (min-width: 650px) {
+	.random-beer-partial {
+		flex-direction: row;
+		padding: 7vh 15vw;
+	}
+}
 
 .title {
 	font-weight: 700;
 	font-size: 120%;
 	margin-bottom: 5px;
+}
+@media (min-width: 650px) {
+	.title {
+		font-size: 80%;
+		margin-top: 5vh;
+	}
 }
 
 /* ---- 
