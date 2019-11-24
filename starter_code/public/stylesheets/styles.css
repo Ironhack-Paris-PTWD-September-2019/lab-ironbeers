@@ -31,6 +31,11 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 }
+@media (min-width: 650px) {
+	body {
+		font-size: 120%;
+	}
+}
 
 button {
 	background-color: #2081c3;
@@ -41,15 +46,26 @@ button {
 	margin: 0.5em 0;
 	box-shadow: 1px 2px 1px rgba(145, 145, 145, 0.481);
 }
-
-li,
-span {
-	font-family: Arial, Helvetica, sans-serif;
-	margin-left: 1em;
+@media (min-width: 650px) {
+	button {
+		font-size: 105%;
+	}
 }
 
-li {
+li,
+span,
+.footer p {
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 1em;
 	display: inline;
+}
+
+@media (min-width: 650px) {
+	li,
+	span,
+	.footer p {
+		margin-left: 2.5em;
+	}
 }
 
 /* ---- 
@@ -150,10 +166,6 @@ CLASSES
 	display: flex;
 	align-items: center;
 }
-.footer p {
-	font-family: Arial, Helvetica, sans-serif;
-	margin-left: 20px;
-}
 
 .random-beer-partial {
 	width: 100vw;
@@ -178,4 +190,11 @@ ID
 #img-beer {
 	height: 20vh;
 	margin: 0.5em 0;
+}
+
+@media (min-width: 650px) {
+	#img-beer {
+		height: 45vh;
+		margin: 7vh 0;
+	}
 }
