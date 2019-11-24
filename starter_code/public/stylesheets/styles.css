@@ -80,6 +80,11 @@ CLASSES
 	padding: 0 7vw;
 	font-family: Arial, Helvetica, sans-serif;
 }
+@media (min-width: 650px) {
+	.beer-data p {
+		padding: 0 3vw;
+	}
+}
 
 .beer-data ul li {
 	display: block;
@@ -116,6 +121,12 @@ CLASSES
 	margin: 1vh 0 7vh;
 }
 
+@media (min-width: 650px) {
+	.beer-partial {
+		width: 30vw;
+	}
+}
+
 .beer-tagline {
 	color: grey;
 	font-size: 90%;
@@ -128,6 +139,16 @@ CLASSES
 	position: absolute;
 	z-index: -1;
 	top: 7vh;
+}
+@media (min-width: 650px) {
+	.beers-container {
+		width: 100vw;
+		display: flex;
+		flex-wrap: wrap;
+		align-content: flex-start;
+		justify-content: space-around;
+		padding: 0 5vw;
+	}
 }
 
 .header {
