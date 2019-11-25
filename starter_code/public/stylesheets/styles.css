@@ -142,4 +142,33 @@ body {
     margin-right: auto;  
 }
 
+.random-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.rand-img {
+    width: 20%;
+}
+
+.beer-Img {
+    display: block;
+    height: 10em;
+    margin-left: auto;
+}
+
+.info-random {
+    width: 60%;
+    margin-right: 10em;
+    margin-left: 3em;
+}
+
+.food-pairing {
+    /* padding: 0; */
+}
+
+span {
+    font-weight: bold;
+}
   
