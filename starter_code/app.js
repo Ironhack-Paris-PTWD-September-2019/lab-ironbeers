@@ -27,20 +27,15 @@ app.get('/beers', (req, res, next) => {
     })
     })
 
-app.get('/random-beers', (req, res, next) => {
+app.get('/randomBeer', (req, res, next) => {
   punkAPI.getRandom()
   .then(beer => {
-    res.render('random-beers',{
-      beer:beer
+    console.log (beer[0]);
+    res.render('randomBeer',{
+      beer:beer[0]
     });
   })
   })
-
-  
-
-
-
-
 
 
 app.listen(3000);
