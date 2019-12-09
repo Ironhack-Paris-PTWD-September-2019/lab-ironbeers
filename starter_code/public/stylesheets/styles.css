@@ -1,8 +1,119 @@
-/*
-white: #F7F9F9;
-light-blue: #2081C3;
-dark-blue: #0A2C42;
-grey: rgba(145, 145, 145, 0.481);
-font-family: Arial, Helvetica, sans-serif
-*/
-  
+* { box-sizing: border-box;}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F7F9F9;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#menu {
+    background-color: #2081C3;
+    color: #F7F9F9;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    padding-left: 2em;
+}
+
+#menu ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    margin-right: 2em;
+}
+
+#menu a {
+    color: #F7F9F9;
+    text-decoration: none;
+}
+
+#main {
+    flex:1;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+#main .logo {
+    height: 15em;
+}
+
+#main a {
+    margin-top: 2em;
+    background-color: #2081C3;
+    color: #F7F9F9;
+    text-decoration: none;
+    padding: .5em 1.2em;
+    border-radius: 5px;
+}
+
+#homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#beers {
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+#beers .beerCard {
+    width: Calc(100% / 3);
+    padding: 1em;
+    text-align: center;
+} 
+
+#beers .beerCard img {
+    height: 10em;
+} 
+
+#beers .beerCard p {
+    text-align: center;
+}
+
+#beers .beerCard .tagline, #randomBeer .beerDetailedCard .information .tagline {
+    font-style: italic;
+    color: rgba(145, 145, 145, 0.481);
+}
+
+#randomBeer .beerDetailedCard {
+    display: flex;
+    align-content: space-around;
+    padding: 2em;
+}
+
+#randomBeer .beerDetailedCard .picture {
+    min-width: 10em;
+    max-height: 20em;
+    max-width: 25em;
+    text-align: center;
+}
+
+#randomBeer .beerDetailedCard .picture img {
+    height: 100%;
+}
+
+#randomBeer .beerDetailedCard .information {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#randomBeer .beerDetailedCard .information .foodPairing {
+    font-weight: bold;
+}
+
+#footer {
+    background-color: #0A2C42;
+    color: #F7F9F9;
+    height: 3em;
+    padding-left: 2em;
+}
